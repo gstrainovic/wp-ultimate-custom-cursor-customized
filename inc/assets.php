@@ -40,7 +40,7 @@ class DLUCC_ASSETS {
         wp_enqueue_script( 'dlucc-script' );
 
         $cursor_color         = dlucc_get_option( 'cursor_color', 'enable' );
-        $cursor_color_hoover  = dlucc_get_option( 'cursor_color2', 'enable' );
+        $cursor_color_hoover  = dlucc_get_option( 'cursor_color_hoover', 'enable' );
         $cursor_opacity       = dlucc_get_option( 'cursor_color_opacity', '0.4' );
         $cursor_hover_opacity = dlucc_get_option( 'cursor_color_hover_opacity', '0.6' );
         $cursor_bd            = $this->hex2rgba( $cursor_color, $cursor_hover_opacity );
