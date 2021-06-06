@@ -1,0 +1,26 @@
+.form-table td input[type="color"]{
+    height: 30px;
+    width: 60px;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.wrap .wrap-right{
+    display: none;
+}
+@media (min-width: 960px) {
+    .wrap {
+        display: flex;
+    }
+    .wrap .wrap-left {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .wrap .wrap-right {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+}
