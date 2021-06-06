@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Ultimate Custom Cursor Customized
  * Description: This will enable nice looking custom cursor style on your WordPress site, WIP
- * Plugin URI: https:/wwww.strainovic-it.ch
+ * Plugin URI: https://github.com/gstrainovic/wp-ultimate-custom-cursor-customized
  * Author: Goran Strainovic
  * Author URI: https:/wwww.strainovic-it.ch
  * Version: 1.0.1

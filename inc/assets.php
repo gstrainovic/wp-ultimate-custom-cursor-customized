@@ -18,7 +18,7 @@ class DLUCC_ASSETS {
         add_action( "wp_enqueue_scripts", [$this, 'scripts'] );
     }
 
-    /**
+    /*
      * Admin
      *
      * @return void
@@ -40,13 +40,16 @@ class DLUCC_ASSETS {
         wp_enqueue_script( 'dlucc-script' );
 
         $cursor_color         = dlucc_get_option( 'cursor_color', 'enable' );
+        $cursor_color_hoover  = dlucc_get_option( 'cursor_color2', 'enable' );
         $cursor_opacity       = dlucc_get_option( 'cursor_color_opacity', '0.4' );
         $cursor_hover_opacity = dlucc_get_option( 'cursor_color_hover_opacity', '0.6' );
         $cursor_bd            = $this->hex2rgba( $cursor_color, $cursor_hover_opacity );
         $cursor_bg            = $this->hex2rgba( $cursor_color, $cursor_opacity );
         $css_data             = '
-            .dl-cursor{ background-color: ' . esc_attr( $cursor_color ) . '; }
-            .dl-fill{border-color: ' . esc_attr( $cursor_bd ) . ' }
+        .dl-cursor.full-grow{ background-color: ' . esc_attr( $cursor_color_hoover ) . '; }
+        .dl-fill.full-grow{ background-color: ' . esc_attr( $cursor_color_hoover ) . '; }
+        .dl-cursor{ background-color: ' . esc_attr( $cursor_color ) . '; }
+        .dl-fill{border-color: ' . esc_attr( $cursor_bd ) . ' }
             .dl-fill:before{ background-color: ' . esc_attr( $cursor_bg ) . '; }
         ';
 

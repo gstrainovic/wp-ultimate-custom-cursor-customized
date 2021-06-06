@@ -44,6 +44,12 @@ class Dlucc_Settings {
                                 'text'  => esc_html__( 'Change cursor color in hex.', 'dlucc' ),
                                 'value' => '#fa575c',
                             ),
+                            'cursorcolor2'        => array(
+                                'title' => esc_html__( 'Cursor Color2', 'dlucc' ),
+                                'type'  => 'color',
+                                'text'  => esc_html__( 'Change cursor hoover color in hex.', 'dlucc' ),
+                                'value' => '#fa575c',
+                            ),
                             'cursorcolor_opacity'   => array(
                                 'title'      => esc_html__( 'Cursor Color Opacity', 'dlucc' ),
                                 'type'       => 'number',
